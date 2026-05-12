@@ -17,3 +17,8 @@ run:
 migrate:
 	@echo "Applying database migrations..."
 	@python manage.py migrate
+
+
+makemigrate: 
+	@echo "Making migrations..."
+	@python manage.py makemigrations
