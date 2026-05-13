@@ -22,3 +22,7 @@ migrate:
 makemigrate: 
 	@echo "Making migrations..."
 	@python manage.py makemigrations
+
+lint:
+	@echo "Applying lint..."
+	@black .
