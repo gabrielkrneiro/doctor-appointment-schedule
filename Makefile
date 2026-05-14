@@ -26,3 +26,7 @@ makemigrate:
 lint:
 	@echo "Applying lint..."
 	@black .
+
+update-requirements:
+	@echo "Updating requirements.txt"
+	@poetry export --format=requirements.txt > requirements.txt
