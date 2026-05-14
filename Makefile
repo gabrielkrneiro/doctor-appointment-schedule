@@ -1,3 +1,7 @@
+setup:
+	@echo "Creating virtual environment and installing dependencies..."
+	@poetry install
+
 infra-up:
 	@echo "Starting infrastructure..."
 	@docker-compose up -d
